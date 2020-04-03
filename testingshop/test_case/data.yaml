@@ -1,0 +1,16 @@
+-
+  login:
+      url: http://www.testingedu.com.cn:8000/index.php/Home/user/login.html
+      username: 13800138006
+      password: 123456
+      vercode: 1111
+      searchtext: 华为
+
+
+
+
+
+
+
+
+
