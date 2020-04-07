@@ -26,6 +26,8 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
         driver = webdriver.Chrome()
         self.lp = LoginPage(driver)
         self.sp = SearchPage(driver)
+    def tearDown(self) -> None:
+        pass
 
 
     '''如何通过读取文件参数化'''
@@ -61,10 +63,9 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
             self.lp.login(url, username, password, vercode)
             sleep(2)
             self.sp.check(searchtext)
+            print("hello")
         # self.input_search(*searchtext)
         # self.click_searchbt()
-    def tearDown(self) -> None:
-        pass
 
 
 if __name__ == '__main__':
