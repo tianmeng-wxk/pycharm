@@ -1,7 +1,7 @@
-from testingshop.BasePage.base_page import BasePage
+from BasePage.base_page import BasePage
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from testingshop.PageObject.login_page import LoginPage
+from PageObject.login_page import LoginPage
 from time import sleep
 
 

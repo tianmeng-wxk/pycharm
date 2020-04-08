@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69b14b4f-4f98-4d48-bd51-2a59e14559ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/pycharm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BasePage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BasePage/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PO/PO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PO/baiduvidio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/BasePage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/BasePage/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/ObjectPage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/ObjectPage/search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/Test Results - Unittests_in_test_case_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/TestCase/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/TestCase/test_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/read_excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/report/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POtestma/suite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PageObject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PageObject/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PageObject/search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pycharm激活文件/ACTIVATION_CODE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pycharm激活文件/jetbrains-agent.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Query/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../api_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../api_test/post_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../api_test/read_testcase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../creat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../example_suite/TestResults_test_case.test_cases.TestCase_2020-03-17_17-02-19.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../example_suite/TestResults_testingshop.test_case.test_cases.TestCase_2020-03-17_17-51-34.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../example_suite/TestResults_testingshop.test_case.test_cases.TestCase_2020-03-20_15-32-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../example_suite/TestResults_testingshop.test_case.test_cases.TestCase_2020-03-30_11-45-06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../music.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../option/去掉黄条和无头模式.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../password.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest/test_first.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest/test_second.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest2/report/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest2/report/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest2/report/report2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pytest2/test_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../qq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../studentSystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../studypython.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tablib写入和读取文件/data.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tablib写入和读取文件/写入文件.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tablib写入和读取文件/读取文件.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test_case/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test_case/test_cases.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wawaxcapp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wawaxcgw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wawaxcnew.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xlrd读取文件/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xlrd读取文件/read_eg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xlrd读取文件/read_xlsx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xlrd读取文件/read_xlsx2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_cases.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,7 +43,17 @@
       <option name="presentableId" value="Default" />
       <updated>1585882015638</updated>
       <workItem from="1585882021140" duration="20000" />
+      <workItem from="1586312915681" duration="170000" />
+      <workItem from="1586336024290" duration="50000" />
     </task>
+    <task id="LOCAL-00001" summary="所有">
+      <created>1586313058275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586313058276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,10 +64,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="所有" />
+    <option name="LAST_COMMIT_MESSAGE" value="所有" />
   </component>
 </project>

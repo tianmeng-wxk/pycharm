@@ -1,12 +1,14 @@
-#from testingshop.PageObject.search_page import SearchPage
 import unittest
 from selenium import webdriver
 from time import sleep
 from ddt import ddt, data, file_data, unpack
-
+import sys
+sys.path.append("E:\\pycharm\\testingshop")
+from PageObject.login_page import LoginPage
+from PageObject.search_page import SearchPage
+#sys.path.append('E:/pycharm/testingshop')
 #from testingshop.BasePage.base_page import BasePage
-from testingshop.PageObject.login_page import LoginPage
-from testingshop.PageObject.search_page import SearchPage
+
 # test_data = [{"url": "http://www.testingedu.com.cn:8000/Home/user/login.html", "username": "13800138006", "password": "123456", "vercode": "1111"},
 #              {"url": "http://www.testingedu.com.cn:8000/Home/user/login.html", "username": "13800138006", "password": "123456", "vercode": "1234"}
 #              ]
@@ -19,7 +21,7 @@ from testingshop.PageObject.search_page import SearchPage
 # excel_data = ReadExcel(excel_path, sheet_name)
 # test_data = excel_data.dict_data()
 @ddt
-class TestCase(unittest.TestCase,LoginPage,SearchPage):
+class TestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         driver = webdriver.Chrome()
