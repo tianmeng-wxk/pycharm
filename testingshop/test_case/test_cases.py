@@ -4,7 +4,7 @@ from selenium import webdriver
 from time import sleep
 from ddt import ddt, data, file_data, unpack
 
-from testingshop.BasePage.base_page import BasePage
+#from testingshop.BasePage.base_page import BasePage
 from testingshop.PageObject.login_page import LoginPage
 from testingshop.PageObject.search_page import SearchPage
 # test_data = [{"url": "http://www.testingedu.com.cn:8000/Home/user/login.html", "username": "13800138006", "password": "123456", "vercode": "1111"},
@@ -64,7 +64,6 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
             self.sp.check(searchtext)
         # self.input_search(*searchtext)
         # self.click_searchbt()
-
 
 if __name__ == '__main__':
     unittest.main()
