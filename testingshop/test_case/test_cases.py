@@ -7,7 +7,6 @@ from ddt import ddt, data, file_data, unpack
 from testingshop.BasePage.base_page import BasePage
 from testingshop.PageObject.login_page import LoginPage
 from testingshop.PageObject.search_page import SearchPage
-from xlrd读取文件.read_eg import ReadExcel
 # test_data = [{"url": "http://www.testingedu.com.cn:8000/Home/user/login.html", "username": "13800138006", "password": "123456", "vercode": "1111"},
 #              {"url": "http://www.testingedu.com.cn:8000/Home/user/login.html", "username": "13800138006", "password": "123456", "vercode": "1234"}
 #              ]
