@@ -62,7 +62,6 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
             self.lp.login(url, username, password, vercode)
             sleep(2)
             self.sp.check(searchtext)
-            print("hello")
         # self.input_search(*searchtext)
         # self.click_searchbt()
 
