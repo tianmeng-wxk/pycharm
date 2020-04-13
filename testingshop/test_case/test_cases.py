@@ -6,6 +6,7 @@ import sys
 sys.path.append("E:\\pycharm\\testingshop")
 from PageObject.login_page import LoginPage
 from PageObject.search_page import SearchPage
+'''放到github要去掉项目文件名testingshop'''
 #sys.path.append('E:/pycharm/testingshop')
 #from testingshop.BasePage.base_page import BasePage
 
@@ -21,7 +22,7 @@ from PageObject.search_page import SearchPage
 # excel_data = ReadExcel(excel_path, sheet_name)
 # test_data = excel_data.dict_data()
 @ddt
-class TestCase(unittest.TestCase):
+class TestCase(unittest.TestCase,LoginPage,SearchPage):
 
     def setUp(self) -> None:
         driver = webdriver.Chrome()

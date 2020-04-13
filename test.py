@@ -9,9 +9,6 @@ option = webdriver.ChromeOptions()
 import re
 #import requests
 #from requests
-#from lxml import etree
-import codecs
-import chardet
 from selenium.webdriver.support.ui import WebDriverWait
 driver = webdriver.Chrome(options=option)
 driver.implicitly_wait(10)
