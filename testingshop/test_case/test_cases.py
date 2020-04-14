@@ -1,11 +1,15 @@
+import os
+import sys
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+sys.path.append('../../')
 import unittest
 from selenium import webdriver
 from time import sleep
 from ddt import ddt, data, file_data, unpack
-import sys
-sys.path.append("E:\\pycharm\\testingshop")
-from PageObject.login_page import LoginPage
-from PageObject.search_page import SearchPage
+from testingshop.PageObject.login_page import LoginPage
+from testingshop.PageObject.search_page import SearchPage
 '''放到github要去掉项目文件名testingshop'''
 #sys.path.append('E:/pycharm/testingshop')
 #from testingshop.BasePage.base_page import BasePage
