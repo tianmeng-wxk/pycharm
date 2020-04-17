@@ -1,8 +1,8 @@
 import yaml
 
 file = open('data.yaml', encoding='utf-8')
-result = yaml.load(file, Loader=yaml.FullLoader)
-#print(type(result))
+testdata = yaml.load(file, Loader=yaml.FullLoader)#或者yaml.full_load()
+#print(type(testdata))
 
-print(result)
+print(testdata)
 

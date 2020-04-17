@@ -56,9 +56,9 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
     # @data(["http://www.testingedu.com.cn:8000/Home/user/login.html", "13800138006", "123456", "1111", "http://www.testingedu.com.cn:8000/Home/User/index.html", "华为"])
     # @unpack
     # def test_2_search(self, url, username, password, vercode, url2, searchtext):
-    #     self.lp.check(url, username, password, vercode)
+    #     self.lp.login(url, username, password, vercode)
     #     self.sp.check(url2, searchtext)
-    #
+
     @file_data('data.yaml')
     def test_2_search(self, **kwargs):
         if 'login' in kwargs:

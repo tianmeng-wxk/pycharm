@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="69b14b4f-4f98-4d48-bd51-2a59e14559ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/read_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/read_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/test_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_cases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlrd读取文件/read_eg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../xlrd读取文件/read_eg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +48,8 @@
       <workItem from="1585882021140" duration="20000" />
       <workItem from="1586312915681" duration="170000" />
       <workItem from="1586336024290" duration="50000" />
+      <workItem from="1587093321983" duration="20000" />
+      <workItem from="1587093358074" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="所有">
       <created>1586313058275</created>
