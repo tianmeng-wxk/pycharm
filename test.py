@@ -196,6 +196,10 @@ class TestCase(unittest.TestCase):
 方法跳出当前iframe，或者还可以通过'''
 #w.switch_to.default_content()
 '''方法跳回最外层的页面。'''
+# driver.switch_to.parent_frame()#返回上一层
+# driver.switch_to.default_content()#返回默认界面
+
+
 #dl6 = driver.find_element_by_link_text("更多").click()
 
 #driver.switchTo().frame(driver.findElement(By.xpath(("//iframe[contains(@src,'/gdgs/single_tree/list/eova_menu')]"))))

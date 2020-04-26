@@ -36,8 +36,12 @@
 # while counter <= n:
 #     sum = sum + counter
 #     counter += 1
-#
-# print("1 到 %d 之和为: %d" % (n, sum))
+# n=10
+# m=11
+# sum =100
+# print("1到{}到{}之和为：{}".format(n, m, sum))
+# print("1到%d到%d之和为：%d"%(n, m, sum))
+# print("之和为：",n,m,sum)
 #
 # class Person:
 #     def __init__(self, name, age):
@@ -90,12 +94,5 @@
 # f = open("data.xlsx", mode="wd")
 # f.write(data.xlsx)
 # f.close()
-
-'''---------------------------'''
-for i in range(5):
-    #print("这是i:", i)
-    for x in range(5):
-        print("这是x:", x)
-
-
+list = [12, 15, 11, 16, 52, 84, 1, 7, 68, 58, 9, 66, 99, 8, 88]
 

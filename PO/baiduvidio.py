@@ -2,10 +2,9 @@ from selenium import webdriver
 from time import sleep
 #使用缓存
 from selenium.webdriver.chrome.options import Options
-
 option = Options()
-option.add_argument("--user-data-dir=C:\\Users\\AppData\\Local\\Google\\Chrome\\User Data")
-driver = webdriver.Chrome(options=option)
+option.add_argument(r"--user-data-dir=C:\Users\Administrator\AppData\Local\Google\Chrome\User Data")
+driver = webdriver.Chrome(chrome_options=option)
 driver.implicitly_wait(10)
 driver.maximize_window()
 driver.get("http://www.m.baidu.com")
