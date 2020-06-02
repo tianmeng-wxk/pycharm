@@ -94,5 +94,139 @@
 # f = open("data.xlsx", mode="wd")
 # f.write(data.xlsx)
 # f.close()
-list = [12, 15, 11, 16, 52, 84, 1, 7, 68, 58, 9, 66, 99, 8, 88]
+# dict = {'name':'aming','age':18,'school':'cema'}
+# for i in dict.keys(),dict.values():
+#     print(i)
+# list=["name","pass","1","2"]
+#
+# dict={}
+# dict = dict.fromkeys(list,"none")
+# dict.pop("name")
+# print(dict)
+#
+#
+# a=10
+# b=10
+# print(a is b)
+#
+# a = input("请输入")
+# list=[]
+# i=0
+# while i<10:
+#     num = input("请输入第{}个数".format(i+1))
+#     list.append(num)
+#     i+=1
+# list.sort(reverse=True)
+# print(list)
+# a=int(input("请输入一个整数："))
+# b=int(input("请输入一个整数："))
+# c=int(input("请输入一个整数："))
+# if a+b>c and b+c>a and a+c>b:
+#     if a==b==c:
+#         print("等边三角形")
+#     elif a==b or b==c or a==c:
+#         print("等腰三角形")
+#     else:
+#         print("三角形")
+#     zc = a+b+c
+#     print("周长："+str(zc))
+# else:
+#     print("不能构成三角形")
+
+# year = int(input("输入一个年份: "))
+# if (year % 4) == 0:
+#    if (year % 100) == 0:
+#        if (year % 400) == 0:
+#            print("{0} 是闰年".format(year))   # 整百年能被400整除的是闰年
+#        else:
+#            print("{0} 不是闰年".format(year))
+#    else:
+#        print("{0} 是闰年".format(year))       # 非整百年能被4整除的为闰年
+# else:
+#    print("{0} 不是闰年".format(year))
+
+# a=input('请输入第一个数字')
+# b=input('请输入第二个数字')
+# print(a.isdigit())
+#计算19000101距离现在（20190820）多少天
+sum = 0
+# for year in range(1900,2019):
+#     if (year%4==0 and year%100!=0) or (year%400==0):
+#         sum = sum + 366
+#     else:
+#         sum = sum + 365
+#
+# for month in range(1,9):
+#     if month in [1,3,5,7,8,10,12]:
+#         sum = sum + 31
+#     elif month in [4,6,9,11]:
+#         sum = sum + 30
+#     else:
+#         if (2019% 4 == 0 and 2019 % 100 != 0) or (2019 % 400 == 0):
+#             sum = sum + 29
+#         else:
+#             sum = sum + 28
+#
+# print(sum-1)
+# for i in range(1,6):
+#     for j in range(0,i):
+#         print('*', end='')
+#     print()
+
+for i in range(0,5):
+    for j in range(5-i):
+        print("#",end='')
+    for e in range(0,i*2+1):
+        print("*",end='')
+    print()
+
+
+# def eg(num1=10,num2=20):
+#     return num2
+# eg()
+#
+#
+#
+# def odd_number(ls):
+#     list=[]
+#     for i in range(1,len(ls),2):
+#         a = ls[i]
+#         list.append(a)
+#     return list
+# print(odd_number([34, 23, 52, 352, 352, 3523, 5]))
+
+# def b(list):
+#     if len(list)>5:
+#         return list[:5]
+#     else:
+#         return list
+# print(b([34,23,52,352,666,3523,5]))
+def d(*args):
+    sum=0
+    for i in args:
+        sum+=i
+    return sum
+print(d(1,2,4,6))
+
+def e(num1,num2,*args):
+    sum=num1*num2
+    return sum
+print(e(10,20))
+
+def a(num1,num2):
+    return max(num1,num2)
+print(a(10,20))
+
+
+
+
+
+
+
+
+
+
+
+
+
 

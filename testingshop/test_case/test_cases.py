@@ -33,25 +33,39 @@ test_data = excel_data.dict_data()
 class TestCase(unittest.TestCase,LoginPage,SearchPage):
 
     def setUp(self) -> None:
+
         self.driver = webdriver.Chrome()
         self.lp = LoginPage(self.driver)
         self.sp = SearchPage(self.driver)
+
+        @data(*test_data)
+        # @unpack
+        # @file_data('data.yaml')
+        def test_1_login(self, test_data):
+            url = test_data['url']
+            username = test_data['username']
+            password = test_data['password']
+            # vercode = test_data['vercode']
+            self.lp.login(url, username, password)
+            sleep(5)
+            # self.lp.check(url, username, password, vercode)
+            self.assertEqual("http://www.testingedu.com.cn:8000/index.php/Home/user/login.html", url, msg="地址验证失败")
     def tearDown(self) -> None:
         self.driver.quit()
 
     '''如何通过读取文件参数化'''
-    @data(*test_data)
-    #@unpack
-    #@file_data('data.yaml')
-    def test_1_login(self, test_data):
-            url = test_data['url']
-            username = test_data['username']
-            password = test_data['password']
-            #vercode = test_data['vercode']
-            self.lp.login(url, username, password)
-            sleep(5)
-            #self.lp.check(url, username, password, vercode)
-            self.assertEqual("http://www.testingedu.com.cn:8000/index.php/Home/user/login.html", url, msg="地址验证失败")
+    # @data(*test_data)
+    # #@unpack
+    # #@file_data('data.yaml')
+    # def test_1_login(self, test_data):
+    #         url = test_data['url']
+    #         username = test_data['username']
+    #         password = test_data['password']
+    #         #vercode = test_data['vercode']
+    #         self.lp.login(url, username, password)
+    #         sleep(5)
+    #         #self.lp.check(url, username, password, vercode)
+    #         self.assertEqual("http://www.testingedu.com.cn:8000/index.php/Home/user/login.html", url, msg="地址验证失败")
 
     # @data(["http://www.testingedu.com.cn:8000/Home/user/login.html", "13800138006", "123456", "1111", "http://www.testingedu.com.cn:8000/Home/User/index.html", "华为"])
     # @unpack
@@ -59,19 +73,19 @@ class TestCase(unittest.TestCase,LoginPage,SearchPage):
     #     self.lp.login(url, username, password, vercode)
     #     self.sp.check(url2, searchtext)
 
-    # @file_data('data.yaml')
-    # def test_2_search(self, **kwargs):
-    #     if 'login' in kwargs:
-    #         url = kwargs['login'].get('url')
-    #         username = kwargs['login'].get('username')
-    #         password = kwargs['login'].get('password')
-    #         vercode = kwargs['login'].get('vercode')
-    #         searchtext = kwargs['login'].get('searchtext')
-    #         self.lp.login(url, username, password, vercode)
-    #         sleep(2)
-    #         self.sp.check(searchtext)
-        # self.input_search(*searchtext)
-        # self.click_searchbt()
+    @file_data('data.yaml')
+    def test_2_search(self, **kwargs):
+        # if 'login' in kwargs:
+        #     url = kwargs['login'].get('url')
+        #     username = kwargs['login'].get('username')
+        #     password = kwargs['login'].get('password')
+        #     vercode = kwargs['login'].get('vercode')
+            searchtext = kwargs['login'].get('searchtext')
+        #     self.lp.login(url, username, password, vercode)
+        #     sleep(2)
+        #     self.sp.check(searchtext)
+            self.input_search(searchtext)
+            self.click_searchbt()
 
 if __name__ == '__main__':
     unittest.main()

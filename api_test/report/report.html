@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>特斯汀接口測試報告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-04-26 17:48:47</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.218750</p>
-<p class='attribute'><strong>Status:</strong> Pass 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-05-13 17:48:08</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.651367</p>
+<p class='attribute'><strong>Status:</strong> Pass 3 Failure 2</p>
 
 <p class='description'>特斯汀接口測試</p>
 </div>
@@ -221,13 +221,13 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>api_test.read_testcase.Test_api</td>
+    <td>5</td>
     <td>3</td>
-    <td>3</td>
+    <td>2</td>
     <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',5)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
@@ -255,7 +255,7 @@ pt1.1:
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login</div></td>
+    <td class='none'><div class='testcase'>test_login_00001: test_login_00001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -278,22 +278,106 @@ pt1.2:
     </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_logout</div></td>
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_00002: test_login_00002</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        fail</a>
 
-    <div id='div_pt1.3' class="popup_window">
+    <div id='div_ft1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.3: 
+ft1.3: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\api_test\api_test\read_testcase.py", line 45, in test_login
+    self.assertEqual(res["msg"], "恭喜您，登录成功", msg="登录失败")
+AssertionError: '用户已经在别处登录' != '恭喜您，登录成功'
+- 用户已经在别处登录
++ 恭喜您，登录成功
+ : 登录失败
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\api_test\api_test\read_testcase.py", line 45, in test_login
+    self.assertEqual(res["msg"], "恭喜您，登录成功", msg="登录失败")
+AssertionError: '用户已经在别处登录' != '恭喜您，登录成功'
+- 用户已经在别处登录
++ 恭喜您，登录成功
+ : 登录失败
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_00003: test_login_00003</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        fail</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\api_test\api_test\read_testcase.py", line 45, in test_login
+    self.assertEqual(res["msg"], "恭喜您，登录成功", msg="登录失败")
+AssertionError: '用户已经在别处登录' != '恭喜您，登录成功'
+- 用户已经在别处登录
++ 恭喜您，登录成功
+ : 登录失败
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\ddt.py", line 151, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\api_test\api_test\read_testcase.py", line 45, in test_login
+    self.assertEqual(res["msg"], "恭喜您，登录成功", msg="登录失败")
+AssertionError: '用户已经在别处登录' != '恭喜您，登录成功'
+- 用户已经在别处登录
++ 恭喜您，登录成功
+ : 登录失败
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_logout</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: 
 
         </pre>
     </div>
@@ -304,9 +388,9 @@ pt1.3:
 
 <tr id='total_row'>
     <td>Total</td>
+    <td>5</td>
     <td>3</td>
-    <td>3</td>
-    <td>0</td>
+    <td>2</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>

@@ -3,9 +3,11 @@ from testingshop.BasePage.base_page import BasePage
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
-from PIL import Image
-import pytesseract
-import requests
+
+from testingshop.common import ivercode,ivercode2
+# from PIL import Image
+# import pytesseract
+# import requests
 
 class LoginPage(BasePage):
 
@@ -33,23 +35,25 @@ class LoginPage(BasePage):
         sleep(3)
         self.input_username(username)
         self.input_password(password)
-        self.driver.save_screenshot("E:\\pycharm\\testingshop\\vercode_img\\page.png")
-        vcode = self.driver.find_element_by_xpath("//*[@id='verify_code_img']")
-        loc = vcode.location
-        size = vcode.size
-        left = loc['x']
-        top = loc['y']
-        right = (loc['x'] + size['width'])
-        button = (loc['y'] + size['height'])
-        page_pic = Image.open("E:\\pycharm\\testingshop\\vercode_img\\page.png")
-        v_code_pic = page_pic.crop((left, top, right, button))
-        v_code_pic.save("E:\\pycharm\\testingshop\\vercode_img\\vercode.png")
-        chaojiying = Chaojiying_Client('qq121292679', 'a546245426', '904603')#用户中心>>软件ID 生成一个替换 96001
-        im = open('E:\\pycharm\\testingshop\\vercode_img\\vercode.png', 'rb').read()#本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
-        res = chaojiying.PostPic(im, 1902)
-        print(res)
-        vercode = res['pic_str']
-        print(vercode)
+
+        # self.driver.save_screenshot("E:\\pycharm\\testingshop\\vercode_img\\page.png")
+        # vcode = self.driver.find_element_by_xpath("//*[@id='verify_code_img']")
+        # loc = vcode.location
+        # size = vcode.size
+        # left = loc['x']
+        # top = loc['y']
+        # right = (loc['x'] + size['width'])
+        # button = (loc['y'] + size['height'])
+        # page_pic = Image.open("E:\\pycharm\\testingshop\\vercode_img\\page.png")
+        # v_code_pic = page_pic.crop((left, top, right, button))
+        # v_code_pic.save("E:\\pycharm\\testingshop\\vercode_img\\vercode.png")
+        # chaojiying = Chaojiying_Client('qq121292679', 'a546245426', '904603')#用户中心>>软件ID 生成一个替换 96001
+        # im = open('E:\\pycharm\\testingshop\\vercode_img\\vercode.png', 'rb').read()#本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
+        # res = chaojiying.PostPic(im, 1902)
+        # print(res)
+        # vercode = res['pic_str']
+        #调用识别验证码接口
+        vercode = ivercode2(driver)
         # # 验证码地址
         # url = "http://www.testingedu.com.cn:8000/index.php?m=Home&c=User&a=verify&r=0.1467503305118174"
         # response = requests.get(url).content
@@ -66,6 +70,7 @@ class LoginPage(BasePage):
         # print(res)
         # vercode = res['pic_str']
         self.input_vercode(vercode)
+        sleep(2)
         self.click_loginbt()
 if __name__ == '__main__':
     url = "http://www.testingedu.com.cn:8000/Home/user/login.html"
