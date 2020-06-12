@@ -17,3 +17,4 @@ driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
 
 TouchAction(driver).tap(x=272, y=1127).perform()
 driver.quit()
+driver.swipe()

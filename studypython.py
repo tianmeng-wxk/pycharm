@@ -173,12 +173,12 @@ sum = 0
 #         print('*', end='')
 #     print()
 
-for i in range(0,5):
-    for j in range(5-i):
-        print("#",end='')
-    for e in range(0,i*2+1):
-        print("*",end='')
-    print()
+# for i in range(0,5):
+#     for j in range(5-i):
+#         print("#",end='')
+#     for e in range(0,i*2+1):
+#         print("*",end='')
+#     print()
 
 
 # def eg(num1=10,num2=20):
@@ -201,25 +201,37 @@ for i in range(0,5):
 #     else:
 #         return list
 # print(b([34,23,52,352,666,3523,5]))
-def d(*args):
-    sum=0
-    for i in args:
-        sum+=i
-    return sum
-print(d(1,2,4,6))
-
-def e(num1,num2,*args):
-    sum=num1*num2
-    return sum
-print(e(10,20))
-
-def a(num1,num2):
-    return max(num1,num2)
-print(a(10,20))
-
-
-
-
+# def d(*args):
+#     sum=0
+#     for i in args:
+#         sum+=i
+#     return sum
+# print(d(1,2,4,6))
+#
+# def e(num1,num2,*args):
+#     sum=num1*num2
+#     return sum
+# print(e(10,20))
+#
+# def a(num1,num2):
+#     return max(num1,num2)
+# print(a(10,20))
+#文件夹批量重命名
+import os
+def rename(path):
+    filename_list = os.listdir(path)
+    print(filename_list)
+    a = 0
+    for i in filename_list:
+       used_name = path + filename_list[a]
+       print(used_name)
+       # filename_list=filename_list[int(i)][:19]
+       # print(filename_list)
+       new_name = path + filename_list[a][:18]
+       print(new_name)
+       os.rename(used_name,new_name)
+       a += 1
+rename(r"C:\Users\Administrator\Desktop\test\3\\")
 
 
 
