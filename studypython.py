@@ -216,29 +216,53 @@ sum = 0
 # def a(num1,num2):
 #     return max(num1,num2)
 # print(a(10,20))
-#文件夹批量重命名
-import os
-def rename(path):
-    filename_list = os.listdir(path)
-    print(filename_list)
-    a = 0
-    for i in filename_list:
-       used_name = path + filename_list[a]
-       print(used_name)
-       # filename_list=filename_list[int(i)][:19]
-       # print(filename_list)
-       new_name = path + filename_list[a][:18]
-       print(new_name)
-       os.rename(used_name,new_name)
-       a += 1
-rename(r"C:\Users\Administrator\Desktop\test\3\\")
+# #文件夹批量重命名
+# import os
+# def rename(path):
+#     filename_list = os.listdir(path)
+#     print(filename_list)
+#     a = 0
+#     for i in filename_list:
+#        used_name = path + filename_list[a]
+#        print(used_name)
+#        # filename_list=filename_list[int(i)][:19]
+#        # print(filename_list)
+#        new_name = path + filename_list[a][:18]
+#        print(new_name)
+#        os.rename(used_name,new_name)
+#        a += 1
+# rename(r"C:\Users\Administrator\Desktop\test\\")
+# from selenium import webdriver
+# options = webdriver.ChromeOptions()
+# options.add_argument("start-maximized")
+# options.add_argument("--headless")
+# options.add_experimental_option('useAutomationExtension',False)
+# options.add_experimental_option('excludeSwitches',['enable-automation'])
+# options.add_argument('incognito')
+# options.add_argument(r'--user-data-dir=C:\Users\王雄开\AppData\Local\Google\Chrome\User Data')
 
 
+import shutil
 
-
-
-
-
+# shutil.rmtree(r'F:\脚本\pycharm\users.txt')
+# import os
+# print(os.getcwd())
+# path = r"F:\脚本\pycharm\users.txt"
+# print(os.access(r"F:\脚本\pycharm\users.txt",os.F_OK),os.access(r"F:\脚本\pycharm\users.txt",os.R_OK))
+#
+# import stat
+# os.chmod(path, stat.S_IRWXU)
+# from selenium.webdriver import ActionChains
+# from selenium import webdriver
+# driver = webdriver.Chrome()
+# #模拟鼠标悬停
+# ac = ActionChains(driver)
+# ac.move_to_element(driver.find_element_by_xpath("22")).perform()
+a = "aAdfjaklf=fkajflafjj"
+c = a.replace("aadfjaklf", "hello world").split("=")
+print(c)
+d = a.lower()
+print(d)
 
 
 
